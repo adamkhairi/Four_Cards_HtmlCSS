@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    max-width: 950px;
+    margin: 0px auto;
+    padding: 0%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 10px;
+   
+}
+
+.container {
+    max-width: 950px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 10px;
+
+}
+.second{
+
+}
+.description{
+    text-align: center;
+    
+}
+
+.sup {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    border-top: 5px hsl(180, 62%, 55%) solid;
+    border-radius: 10px;
+
+}
+
+.team {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border-top: 5px hsl(0, 78%, 62%) solid;
+    border-radius: 10px;
+}
+
+.karma {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    border-top: 5px hsl(34, 97%, 64%) solid;
+    border-radius: 10px;
+}
+
+.calc {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    border-top: 5px solid hsl(212, 86%, 64%);
+    border-radius: 10px;
+
+}
+
+.card {
+    background-color: white;
+    box-shadow: black;
+    padding: 20px;
+    box-shadow: 5px 5px 8px #888888;
+}
+
+.card svg {
+    float: right;
+}
+.first{
+ font-weight: 300;
+}
+@media only screen and (max-width: 768px) {
+
+    .header {
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .container {
+        padding: 5px;
+        margin: 10px auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+}
